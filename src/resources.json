@@ -1,0 +1,26 @@
+{
+    "example_resource": {
+        "type":"js|css",
+        "description": "optional",
+        "host_config": {
+            "host":"G_DRIVE"
+        },
+        "versions": {
+            "0.1.2": {"url":"//drive.google.com/21235414/share/"},
+            "1.0.1": {"host":"g_drive", "url":"//drive.google.com/45351545/share/"}
+        }
+    },
+    
+    "oliver_assertions": {
+        "type":"js",
+        "host_config": {
+            "host":"GH_RAW",
+            "user":"amj311",
+            "repo":"oliver-test",
+            "path":"src/Assertions.js"
+        },
+        "versions": {
+            "1.4.0": {"commitish":"174f5e4"}
+        }
+    }
+}
