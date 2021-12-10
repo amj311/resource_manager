@@ -17,10 +17,8 @@
             "host":"GH_RAW",
             "user":"amj311",
             "repo":"oliver-test",
-            "path":"src/Assertions.js"
-        },
-        "versions": {
-            "1.4.0": {"commitish":"174f5e4"}
+            "path":"src/Assertions.js",
+            "versioning":"literal"
         }
     }
 }

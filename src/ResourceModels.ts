@@ -15,7 +15,7 @@ export type ResourceData = {
     type: ResourceType,
     host_config : HostConfig,
     description? : string,
-    versions: { [version_key:string]: VersionData }
+    versions?: { [version_key:string]: VersionData }
 }
 
 export class HostConfig {

@@ -23,8 +23,7 @@ export function injectResource(resource: string, version:string): void {
     if (!res) {
         throw new Error("Could not find resource: " + resource);
     }
-    let versionData = res.versions[version]; 
-    let url = constructImportableUrl(res.host_config, versionData);
+    let url = constructImportableUrl(res, version);
 
     // inject import
     injectImportElement(res.type, url);    
