@@ -14,7 +14,7 @@ function parseGoogleShareLink(props:any):string {
 }
 
 function parseGithubStFile(version:GithubVersion, config:GithubConfig):string {
-    return `https://raw.githubusercontent.com/${config.user}/${config.repo}/${version.commitish}/${config.path}`;
+    return `https://cdn.jsdelivr.net/gh/${config.user}/${config.repo}/${config.path}`;
 }
 
 // https://docs.google.com/document/d/1kim0OY67DMvSxpLxaTEq7EpxwOJGfG8ssngctHW60hc/edit?usp=sharing

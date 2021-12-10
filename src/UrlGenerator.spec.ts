@@ -14,7 +14,7 @@ describe(constructImportableUrl, ()=>{
                 commitish: "174f5e4"
             } 
             let url = constructImportableUrl(config,data);
-            expect(url).toBe("https://raw.githubusercontent.com/amj311/oliver-test/174f5e4/src/Assertions.js")
+            expect(url).toBe("https://cdn.jsdelivr.net/gh/amj311/oliver-test/src/Assertions.js")
         })
     })
 })

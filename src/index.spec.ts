@@ -11,7 +11,7 @@ describe(injectResource, ()=>{
         document.createElement = jest.fn().mockReturnValue(mockEl);
         document.head.appendChild = jest.fn();
         injectResource(resource,version);
-        expect(mockEl.setAttribute).toHaveBeenCalledWith("src","https://raw.githubusercontent.com/amj311/oliver-test/174f5e4/src/Assertions.js")
+        expect(mockEl.setAttribute).toHaveBeenCalledWith("src","https://cdn.jsdelivr.net/gh/amj311/oliver-test/src/Assertions.js")
         expect(document.head.appendChild).toHaveBeenCalledWith(mockEl)
     })
 })
