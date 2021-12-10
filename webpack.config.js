@@ -21,7 +21,7 @@ const config = {
     output: {
         path: OUT_DIR,
         filename: 'StResources.js',
-        library: 'StResource',
+        library: 'StResources',
         libraryTarget: 'var'
     },
     target: 'web'
