@@ -17,8 +17,17 @@
             "host":"GH_RAW",
             "user":"amj311",
             "repo":"oliver-test",
-            "path":"src/Assertions.js",
-            "versioning":"literal"
+            "path":"src/Assertions.js"
+        }
+    },
+    
+    "recent_blogs": {
+        "type":"js",
+        "host_config": {
+            "host":"GH_RAW",
+            "user":"amj311",
+            "repo":"st_recent_blogs",
+            "path":"RecentBlogs.vue.js"
         }
     }
 }
