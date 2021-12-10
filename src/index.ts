@@ -10,17 +10,14 @@ type LoadProps = {
 
 type ResourcesRequest = { [resource:string]: LoadProps }
 
-// declare var ST_RESOURCES: ResourcesRequest;
-// const resource_request = ST_RESOURCES;
 
-// if (resource_request !== undefined) {
-//     for (let [res, props] of Object.entries(resource_request)) {
-//         loadStFile(res,props);
-//     }
-// }
+export function load(request: ResourcesRequest) {
+    for (let [res, props] of Object.entries(request)) {
+        injectResource(res,props);
+    }
+}
 
-export default function loadStFile(resource: string, props:LoadProps
-    ): void {
+export function injectResource(resource: string, props:LoadProps): void {
     // get access url from library
     let res = resources[resource];
     if (!res) {

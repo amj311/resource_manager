@@ -5,9 +5,7 @@ const OUT_DIR = path.resolve(__dirname, 'dist');
 
 const config = {
     mode: "production",
-    entry: {
-      "index": SRC_DIR+"/index.ts"
-    },
+    entry: SRC_DIR+"/index.ts",
     module: {
       rules: [
         {
@@ -22,9 +20,9 @@ const config = {
     },
     output: {
         path: OUT_DIR,
-        filename: '[name].js',
-        library: '[name]',
-        libraryTarget: 'umd'
+        filename: 'StResources.js',
+        library: 'StResource',
+        libraryTarget: 'var'
     },
     target: 'web'
 };
